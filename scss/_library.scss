@@ -1,0 +1,29 @@
+@import "media";
+.btn{
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+.btn-primary{
+    background-color: crimson;
+    color: white;
+    padding: 12px 36px;
+    border-radius: 6px;
+    cursor: pointer;
+     font-size: 25px;
+     font-weight: 400;
+     border: 2px solid crimson;
+     margin: 25px 0px;
+     @include md{
+        padding: 10px 36px;
+         a{
+             font-size: 20px;
+         }
+     }
+    &:hover{
+        background-color: transparent;
+        a{
+            color: crimson;
+        }
+    }
+}

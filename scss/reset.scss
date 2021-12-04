@@ -1,0 +1,20 @@
+*{
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;//chieu dai cua 1 the se bao gom ca border va padding
+}
+
+ul,ol{
+    list-style: none;
+    
+}
+
+a{
+    text-decoration: none;
+}
+
+input, button{
+    border: none;
+    outline: none;
+    background-color: none;
+}
