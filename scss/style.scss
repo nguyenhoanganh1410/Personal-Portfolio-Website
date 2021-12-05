@@ -1,15 +1,15 @@
 @import "media";
 @import "grid";
 @import "library";
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 $color : crimson;
 body{
   
  // font-family: "Droid Serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
- font-family: 'Ubuntu', sans-serif;
- 
+
+ font-family:'poppins',sans-serif;
 }
 @mixin bar($phanTram) {
   margin-top: 10px;
@@ -36,7 +36,7 @@ body{
   background-image: url("../images/banner.jpg");
   background-position: center;
   background-size: cover;
-  
+  font-family: 'Ubuntu', sans-serif;
   position: relative;
   .header_fixed{
     position: fixed;
@@ -52,10 +52,11 @@ body{
       
         li{
           a{
-           
+            
             &:hover{
-              color: #fff;
+              color: white;
             }
+          
           }
           
         }
@@ -67,6 +68,7 @@ body{
         color: #fff;
         font-size: 35px;
         font-weight: 600;
+       
         .nav_img-red{
           color: #fff;
         }
@@ -145,8 +147,8 @@ nav{
         flex-direction: column;
         li{
         margin-bottom: 35px;
-         
-          a{
+        a{
+            cursor: pointer;
             font-size: 24px;
             font-weight: 600;
             &:hover{
@@ -164,12 +166,12 @@ nav{
       
       justify-content: space-around;
       align-items: center;
-      
       li{
+        cursor: pointer;
         a{
           color: #fff;
           font-size: 18px;
-          font-weight: 500;
+          font-weight: 600;
           margin-left: 25px;
           &:hover{
             color: $color;
@@ -323,6 +325,7 @@ nav{
           
       }
       p{
+        font-family:'poppins',sans-serif;
        text-align: justify;
       }
     }
@@ -491,6 +494,7 @@ nav{
        
         .content_left{
          padding-right: 30px;
+         font-family:'poppins',sans-serif;
           h2{
             font-size: 20px;
             font-weight: 600;

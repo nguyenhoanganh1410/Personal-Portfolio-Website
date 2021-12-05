@@ -77,3 +77,55 @@ $(".smart").click(function (e) {
   e.preventDefault();
   $("html, body").animate({ scrollTop: 0 }, "slow");
 });
+
+$(".home").click(function (e) {
+  e.preventDefault();
+  $("html, body").animate({ scrollTop: 0 }, "slow");
+});
+
+$(".nav_contact").click(function (e) {
+  e.preventDefault();
+  $("html, body").animate({ scrollTop: findPos(document.getElementById("link_6"))-30 }, "slow");
+  
+});
+
+
+$(".about").click(function (e) {
+  e.preventDefault();
+  $("html, body").animate({ scrollTop: findPos(document.getElementById("link_2"))-80 }, "slow");
+  
+});
+
+$(".service").click(function (e) {
+  e.preventDefault();
+  $("html, body").animate({ scrollTop: findPos(document.getElementById("link_3"))-80 }, "slow");
+  
+});
+
+$(".nav_skill").click(function (e) {
+  e.preventDefault();
+  $("html, body").animate({ scrollTop: findPos(document.getElementById("link_4"))-80 }, "slow");
+  
+});
+
+$(".team").click(function (e) {
+  e.preventDefault();
+  $("html, body").animate({ scrollTop: findPos(document.getElementById("link_5"))-80 }, "slow");
+  
+});
+
+
+
+
+
+//Finds y value of given object
+function findPos(obj) {
+  var curtop = 0;
+  if (obj.offsetParent) {
+      do {
+          curtop += obj.offsetTop;
+      } while (obj = obj.offsetParent);
+  return [curtop];
+  }
+}
+
