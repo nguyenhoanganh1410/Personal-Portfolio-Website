@@ -380,7 +380,7 @@ nav{
       .content_about{
         width: 100%;
         .name{
-          font-size: 18px;
+          font-size: 16px;
           font-weight: 600;
           margin-bottom: 10px;
         }
@@ -590,6 +590,9 @@ nav{
         }
         .content_right{
           padding-left: 30px;
+          @include xs{
+            padding-left: 0px;
+          }
           .skill-1{
            margin-bottom: 25px;
             p{
@@ -865,7 +868,13 @@ footer{
   justify-content: center;
   align-items: center;
   padding: 20px 0px;
+ 
   .content{
+    @include xs{
+      p{
+        font-size: 14px;
+      }
+    }
     p{
       color: white;
       font-weight: 500;

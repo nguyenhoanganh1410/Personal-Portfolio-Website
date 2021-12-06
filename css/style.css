@@ -1306,9 +1306,17 @@ nav .container .nav_menu .nav_ul ul li a:hover {
 }
 
 .AboutMe .content .content_about .name {
-	font-size: 18px;
+	font-size: 16px;
 	font-weight: 600;
 	margin-bottom: 10px;
+}
+
+.skills .container .content .content_right {
+	padding-left: 0;
+}
+
+footer .content p {
+	font-size: 14px;
 }
 
 }

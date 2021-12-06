@@ -80,11 +80,13 @@ $(".smart").click(function (e) {
 
 $(".home").click(function (e) {
   e.preventDefault();
+  $(".nav_ul").removeClass("active");
   $("html, body").animate({ scrollTop: 0 }, "slow");
 });
 
 $(".nav_contact").click(function (e) {
   e.preventDefault();
+  $(".nav_ul").removeClass("active");
   $("html, body").animate({ scrollTop: findPos(document.getElementById("link_6"))-30 }, "slow");
   
 });
@@ -92,24 +94,28 @@ $(".nav_contact").click(function (e) {
 
 $(".about").click(function (e) {
   e.preventDefault();
+  $(".nav_ul").removeClass("active");
   $("html, body").animate({ scrollTop: findPos(document.getElementById("link_2"))-80 }, "slow");
   
 });
 
 $(".service").click(function (e) {
   e.preventDefault();
+  $(".nav_ul").removeClass("active");
   $("html, body").animate({ scrollTop: findPos(document.getElementById("link_3"))-80 }, "slow");
   
 });
 
 $(".nav_skill").click(function (e) {
   e.preventDefault();
+  $(".nav_ul").removeClass("active");
   $("html, body").animate({ scrollTop: findPos(document.getElementById("link_4"))-80 }, "slow");
   
 });
 
 $(".team").click(function (e) {
   e.preventDefault();
+  $(".nav_ul").removeClass("active");
   $("html, body").animate({ scrollTop: findPos(document.getElementById("link_5"))-80 }, "slow");
   
 });
