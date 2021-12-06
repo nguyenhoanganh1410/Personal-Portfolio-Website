@@ -198,6 +198,68 @@ nav .container .nav_menu ul li a:hover {
 	align-items: center;
 }
 
+.header_content .container .personal_img .tran {
+	position: relative;
+}
+
+.header_content .container .personal_img .tran .box {
+	position: relative;
+	width: 350px;
+	height: 450px;
+}
+
+.header_content .container .personal_img .tran .box .item {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	overflow: hidden;
+	width: 350px;
+	height: 350px;
+	border-radius: 50%;
+	background-color: yellow;
+}
+
+.header_content .container .personal_img .tran .box .item img {
+	position: absolute;
+	right: -30px;
+	bottom: 0;
+	width: 350px;
+	height: 450px;
+	-o-object-fit: cover;
+	object-fit: cover;
+}
+
+.header_content .container .personal_img .tran .box img {
+	position: absolute;
+	right: -30px;
+	bottom: 0;
+	width: 350px;
+	height: 450px;
+	margin-right: 40px;
+	-o-object-fit: cover;
+	object-fit: cover;
+}
+
+.header_content .container .personal_img .tran .box::before {
+	position: absolute;
+	z-index: 10;
+	z-index: 1;
+	bottom: 0;
+	left: 0;
+	width: 350px;
+	height: 350px;
+	content: '';
+	border-radius: 50%;
+	background-color: transparent;
+	box-shadow: 0 100px 0 40px #333;
+}
+
+.header_content .container .personal_img .tran .content {
+	position: absolute;
+	z-index: 10;
+	text-align: center;
+}
+
 .header_content .container .content-text p {
 	font-size: 27px;
 	color: #fff;
@@ -1207,6 +1269,24 @@ nav .container .nav_menu .nav_ul ul li a:hover {
 	padding: 10px;
 }
 
+.header_content .container .content-text .text-3 {
+	font-size: 27px;
+}
+
+.header_content .container .content-text .name {
+	font-size: 40px;
+	font-weight: 600;
+	margin: 6px 0;
+}
+
+.header_content .container .content-text button a {
+	font-size: 20px;
+}
+
+.AboutMe {
+	margin-top: 60px;
+}
+
 .AboutMe .content {
 	flex-direction: column;
 	align-items: center;
@@ -1214,8 +1294,8 @@ nav .container .nav_menu .nav_ul ul li a:hover {
 }
 
 .AboutMe .content img {
-	width: 400px;
-	height: 400px;
+	width: 350px;
+	height: 350px;
 	border-radius: 6px;
 	-o-object-fit: cover;
 	object-fit: cover;
@@ -1226,7 +1306,7 @@ nav .container .nav_menu .nav_ul ul li a:hover {
 }
 
 .AboutMe .content .content_about .name {
-	font-size: 20px;
+	font-size: 18px;
 	font-weight: 600;
 	margin-bottom: 10px;
 }

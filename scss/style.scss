@@ -33,7 +33,8 @@ body{
 
 .header{
   height: 100vh;
-  background-image: url("../images/banner.jpg");
+    background-image: url("../images/banner.jpg");
+//background-color: #333;
   background-position: center;
   background-size: cover;
   font-family: 'Ubuntu', sans-serif;
@@ -196,8 +197,85 @@ nav{
   .content{
 
   }
+.personal_img{
+  .tran{
+    position: relative;
+    
+.box{
+    width: 350px;
+    height: 450px;
+   // background-color: gray;
+    position: relative;
+    .item{
+        width: 350px;
+        height:350px ;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-color: yellow;
+        border-radius: 50%;
+        overflow: hidden;
 
+        img{
+            width: 350px;
+            height: 450px;
+            object-fit: cover;
+            
+            position: absolute;
+            bottom: 0px;
+            right:-30px;
+        }
+    }
+    img{
+        width: 350px;
+        height: 450px;
+        object-fit: cover;
+        margin-right: 40px;
+        position: absolute;
+        bottom: 0px;
+        right:-30px;
+    }
+    &::before{
+        content: '';
+        width: 350px;
+        height: 350px;
+        background-color: transparent;
+        z-index: 10;
+        position: absolute;
+        bottom: 0;
+        left:0;
+        border-radius: 50%;
+       box-shadow: 0 100px 0 40px #333;
+        z-index: 1;
+    }
+    
+    }
+    .content{
+        position: absolute;
+        z-index: 10;
+        text-align: center;
+       
+     }
+}
+
+}
   .content-text{
+    @include xs{
+      .text-3{
+        font-size: 27px;
+      }
+      .name{
+        font-size: 40px;
+     
+        font-weight: 600;
+        margin: 6px 0px;
+      }
+      button{
+        a{
+          font-size: 20px;
+        }
+      }
+    }
     @include md{
       .text-3{
         font-size: 27px;
@@ -240,6 +318,9 @@ nav{
   align-items: center;
   height: 100vh;
   margin-top: 100px;
+  @include xs{
+    margin-top: 60px;
+  }
   .about-top{
     padding-bottom: 50px;
     h2{
@@ -292,14 +373,14 @@ nav{
       justify-content: center;
       img{
         border-radius: 6px;
-        width: 400px;
-        height: 400px;
+        width: 350px;
+        height: 350px;
         object-fit: cover;
       }
       .content_about{
         width: 100%;
         .name{
-          font-size: 20px;
+          font-size: 18px;
           font-weight: 600;
           margin-bottom: 10px;
         }
